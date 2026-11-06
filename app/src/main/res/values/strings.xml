@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">DouaneTemporelle</string>
+    <string name="app_name">Douane Temporelle</string>
+
+    <!-- hedhi Activité 1 -->
+    <string name="titre_douane">Douane Temporelle</string>
+    <string name="hint_nom">Nom du voyageur</string>
+    <string name="hint_naissance">Année de naissance (ex: 1990)</string>
+    <string name="hint_destination">Année de destination (ex: 2050)</string>
+    <string name="label_motif_choix">Motif du voyage :</string>
+    <string name="motif_tourisme">Tourisme</string>
+    <string name="motif_modification">Modification du passé</string>
+    <string name="motif_fuite">Fuite</string>
+    <string name="btn_inspecter">Inspecter le profil</string>
+    <string name="erreur_nom">Veuillez saisir le nom</string>
+    <string name="erreur_annee">Veuillez saisir une année</string>
+    <string name="erreur_ordre">La destination doit être après la naissance</string>
+    <string name="erreur_motif">Veuillez choisir un motif</string>
+
+
 </resources>
