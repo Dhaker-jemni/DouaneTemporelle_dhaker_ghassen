@@ -16,5 +16,4 @@
     <string name="erreur_ordre">La destination doit être après la naissance</string>
     <string name="erreur_motif">Veuillez choisir un motif</string>
 
-
 </resources>
