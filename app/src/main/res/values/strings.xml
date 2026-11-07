@@ -16,4 +16,15 @@
     <string name="erreur_ordre">La destination doit être après la naissance</string>
     <string name="erreur_motif">Veuillez choisir un motif</string>
 
+    <!-- hedhi Activité 2 -->
+    <string name="titre_passeport">PASSEPORT TEMPOREL</string>
+    <string name="label_nom">Nom : %1$s</string>
+    <string name="label_age">Âge temporel : %1$d ans</string>
+    <string name="label_annees">%1$d → %2$d</string>
+    <string name="label_motif">Motif : %1$s</string>
+    <string name="alerte_paradoxe">⚠ Risque de paradoxe : approbation impossible</string>
+    <string name="btn_approuver">Approuver le saut temporel</string>
+    <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
+    <string name="desc_image">Logo du passeport</string>
+
 </resources>
