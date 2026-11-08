@@ -10,10 +10,71 @@
     <ImageView
         android:id="@+id/img_logo_dj"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+            android:layout_height="match_parent"
         android:layout_weight="0.3"
         android:contentDescription="@string/desc_image"
         android:padding="8dp"
         android:scaleType="centerInside"
         android:src="@drawable/passport" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_titre_passeport_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/marron"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_nom_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titre_passeport_dj"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_age_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nom_dj"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_annees_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_dj"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_motif_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_annees_dj"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_alerte_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_motif_dj"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/rouge"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
 </LinearLayout>
