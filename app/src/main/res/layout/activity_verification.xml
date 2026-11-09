@@ -75,6 +75,19 @@
             android:layout_marginTop="12dp"
             android:textColor="@color/rouge"
             android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_refuser_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btn_refuser" />
+
+        <Button
+            android:id="@+id/btn_approuver_dj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_dj"
+            android:text="@string/btn_approuver" />
     </RelativeLayout>
     
 </LinearLayout>
