@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void inspecter() {
-        // 1) قراءة البيانات من الحقول
+
         String nom = etNom.getText().toString().trim();
         String sNaissance = etNaissance.getText().toString().trim();
         String sDestination = etDestination.getText().toString().trim();
