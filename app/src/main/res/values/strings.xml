@@ -26,8 +26,10 @@
     <string name="btn_approuver">Approuver le saut temporel</string>
     <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
     <string name="desc_image">Logo du passeport</string>
+    <string name="titre_alerte">Attention !</string>
+    <string name="bouton_ok">OK</string>
 
-    <!-- Activité 3 -->
+    <!-- hedhi  Activité 3 -->
     <string name="msg_approuve">Bon voyage %1$s !</string>
     <string name="msg_refuse">%1$s est en état d\'arrestation temporelle</string>
     <string name="btn_nouveau">Nouveau voyageur</string>

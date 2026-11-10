@@ -68,14 +68,7 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tv_alerte_dj"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_motif_dj"
-            android:layout_marginTop="12dp"
-            android:textColor="@color/rouge"
-            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btn_refuser_dj"
             android:layout_width="match_parent"
