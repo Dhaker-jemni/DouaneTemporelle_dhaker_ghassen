@@ -76,7 +76,6 @@ public class VerificationActivity extends AppCompatActivity {
         intent.putExtra(Cles.cle(Cles.MATRICULE, "NOM_VOYAGEUR"), nom);
         startActivity(intent);
     }
-
     private boolean estPremier(int n) {
         if (n < 2) {
             return false;

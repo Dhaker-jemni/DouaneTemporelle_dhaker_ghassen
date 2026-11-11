@@ -15,11 +15,10 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-
         Intent intent = getIntent();
-        boolean approuve = intent.getBooleanExtra("VERDICT", false);
-        String nom = intent.getStringExtra("NOM_VOYAGEUR");
-
+        boolean approuve = intent.getBooleanExtra(Cles.cle(Cles.MATRICULE, "VERDICT"), false);
+        String nom = intent.getStringExtra(Cles.cle(Cles.MATRICULE, "NOM_VOYAGEUR"));
+        
         View racine = findViewById(R.id.layout_racine_dj);
         TextView tvMessage = findViewById(R.id.tv_message_dj);
         Button btnNouveau = findViewById(R.id.btn_nouveau_dj);
