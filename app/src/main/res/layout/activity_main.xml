@@ -25,36 +25,43 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:hint="@string/hint_nom"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />/>
 
         <EditText
             android:id="@+id/et_naissance_dj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:hint="@string/hint_naissance"
             android:inputType="number"
-            android:maxLength="4" />
+            android:maxLength="4"
+            android:minHeight="48dp"/>
 
         <EditText
             android:id="@+id/et_destination_dj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:hint="@string/hint_destination"
             android:inputType="number"
-            android:maxLength="4" />
+            android:maxLength="4"
+            android:minHeight="48dp"/>
 
         <TextView
             android:id="@+id/tv_motif_titre_dj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/label_motif_choix"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <RadioGroup
             android:id="@+id/rg_motif_dj"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
 
             <RadioButton
                 android:id="@+id/rb_tourisme_dj"
@@ -80,7 +87,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@string/btn_inspecter" />
+            android:padding="12dp"
+            android:text="@string/btn_inspecter"
+            android:textSize="16sp"/>
     </LinearLayout>
 
 </ScrollView>
