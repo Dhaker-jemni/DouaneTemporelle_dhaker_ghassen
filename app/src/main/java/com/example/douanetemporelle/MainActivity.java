@@ -12,9 +12,10 @@ import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+// hedhi el ecran loula : formulaire mta3 el voyageur
 public class MainActivity extends AppCompatActivity {
 
+// les champs w el boutons elli bech nesta3mlohom fi kol el classe
     private EditText etNom, etNaissance, etDestination;
     private RadioGroup rgMotif;
     private Button btnInspecter;
@@ -23,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+// narbtou el éléments mel XML bel id mte3hom
         etNom = findViewById(R.id.et_nom_dj);
         etNaissance = findViewById(R.id.et_naissance_dj);
         etDestination = findViewById(R.id.et_destination_dj);
         rgMotif = findViewById(R.id.rg_motif_dj);
         btnInspecter = findViewById(R.id.btn_inspecter_dj);
 
-
+// wa9t nenzlou 3al bouton, nabdew ninspectiw
         btnInspecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+// hedhi fonction inspecter : ta9ra el données w ta3mel el vérifications
     private void inspecter() {
-
+// 1) na9rw el données mel champs (trim tfasa5 el fraghet)
         String nom = etNom.getText().toString().trim();
         String sNaissance = etNaissance.getText().toString().trim();
         String sDestination = etDestination.getText().toString().trim();
 
-
+// 2) net2akdou ken el champ mouch faregh (w return twa9ef el fonction)
         if (nom.isEmpty()) {
             afficherAlerte(getString(R.string.erreur_nom));
             return;
@@ -55,24 +56,27 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-
+        // 3) nbaddlou el 3am men texte lel ra9m (int) bech na7sbou
         int naissance = Integer.parseInt(sNaissance);
         int destination = Integer.parseInt(sDestination);
 
-
+// 3am el destination lezem tkoun ba3d 3am el naissance
         if (destination <= naissance) {
             afficherAlerte(getString(R.string.erreur_ordre));
             return;
         }
-
+// 4) na9raw el motif elli e5tarou el voyageur (RadioButton)
+        // ken ma 5tar 7ata 7aja, el id ykoun -1
         int idChoisi = rgMotif.getCheckedRadioButtonId();
         if (idChoisi == -1) {
             afficherAlerte(getString(R.string.erreur_motif));
             return;
         }
+
         RadioButton rbChoisi = findViewById(idChoisi);
         String motif = rbChoisi.getText().toString();
 
+        // 5) Intent explicite lel écran 2
         Intent intent = new Intent(MainActivity.this, VerificationActivity.class);
         intent.putExtra(Cles.cle(Cles.MATRICULE, "NOM_VOYAGEUR"), nom);
         intent.putExtra(Cles.cle(Cles.MATRICULE, "ANNEE_NAISSANCE"), naissance);
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Cles.cle(Cles.MATRICULE, "MOTIF"), motif);
         startActivity(intent);
     }
-
+// hedhi fonction tab3eth message d alerte bel AlertDialog
     private void afficherAlerte(String message) {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle(getString(R.string.titre_alerte));
